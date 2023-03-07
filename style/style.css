@@ -338,21 +338,42 @@ input {
 }
 .project-bar-element {
   padding-bottom: 5px;
-}
-.project-bar-element:hover {
-  border-bottom: solid 1px;
-  border-color: #e3b873;
-}
-.project-link {
   font-family: "Yeseva One";
   font-size: 14px;
   line-height: 19px;
   text-transform: uppercase;
-  color: #e3b873;
+  color: #ffffff30;
 }
+.project-bar-element:hover {
+  border-bottom: solid 1px;
+  border-color: #e3b873;
+  cursor: pointer;
+}
+
 .project-active {
   border-bottom: solid 1px;
   border-color: #e3b873;
+  color: #e3b873;
+}
+
+#slider {
+  overflow: hidden;
+  max-width: 679px;
+  max-height: 482px;
+  position: relative;
+}
+
+@media (max-width: 1299px) {
+  #slider {
+    cursor: pointer;
+  }
+}
+
+.slider-image {
+  position: relative;
+  display: flex;
+  left: 0;
+  transition: all ease 1s;
 }
 
 .projetcs-photo {
